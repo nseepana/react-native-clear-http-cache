@@ -5,10 +5,6 @@
 RCT_EXPORT_MODULE()
 
     
-RCT_EXPORT_METHOD(start)
-{
-    [[NSURLCache sharedURLCache] removeAllCachedResponses];
-}
 
 RCT_EXPORT_METHOD(start:(NSString *)stringArgument callback:(RCTResponseSenderBlock)callback)
 {
